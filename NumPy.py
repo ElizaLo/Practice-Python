@@ -51,6 +51,15 @@ a = np.linspace(1,3,10) #slicing
 print(a)
 
 a = np.array([(1,2,3),(2,3,4),(5,6,8)])
-print(a.max())
-print(a.min())
-print(a.sum())
+
+print(a.max()) #maximum element in array
+print(a.min()) #minimum element in array
+print(a.sum(), "\n") #sum elements in array
+
+print(a.sum(axis=1),"\n") #horizontal axis ->
+print(a.sum(axis=0), "\n") #vertical axis |
+print("\n", np.sqrt(a)) #square
+print("\n", np.std(a)) #Standart Deviation (средне квадратическое отклонение)
+
+b = np.array([(7,5,10),(25,34,2),(0,1,3)])
+b = np.array([(7,5,10),(25,34,2),(0,1,3)]) #plus
