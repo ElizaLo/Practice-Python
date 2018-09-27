@@ -62,4 +62,4 @@ print("\n", np.sqrt(a)) #square
 print("\n", np.std(a)) #Standart Deviation (средне квадратическое отклонение)
 
 b = np.array([(7,5,10),(25,34,2),(0,1,3)])
-b = np.array([(7,5,10),(25,34,2),(0,1,3)]) #plus
+b = np.array([(7,5,10),(25,34,2),(0,1,3)]) #plus +1
