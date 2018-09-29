@@ -62,4 +62,12 @@ print("\n", np.sqrt(a)) #square
 print("\n", np.std(a)) #Standart Deviation (средне квадратическое отклонение)
 
 b = np.array([(7,5,10),(25,34,2),(0,1,3)])
-b = np.array([(7,5,10),(25,34,2),(0,1,3)]) #plus +1
+
+print("\n", a+b) #sum of matrices
+print("\n", a-b) #substraction of matrices
+print("\n", a*b) #multiply of matrices
+print("\n", a/b) #divide of matrices
+
+print("\n"*2,np.vstack((a,b))) #concatenation along the first axis ->
+print("\n"*2,np.hstack((a,b))) #stack arrays in sequence horizontaly (column wise)
+print("\n", a.ravel()) #into a single column
