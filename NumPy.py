@@ -1,6 +1,7 @@
 import numpy as np
 import time
 import sys
+import matplotlib.pyplot as plt
 
 
 a = np.array([1,2,3])
@@ -11,11 +12,13 @@ print(b)
 
 S = range(1000)
 print(S)
-print(sys.getsizeof(5)*len(S)) # List - size of one element multiplied by the number of all elements, so we got the size of all elements
+print(sys.getsizeof(5)*len(S)) # List - size of one element multiplied by the number of all elements,
+                                # so we got the size of all elements
 print(sys.getsizeof(5)) #size of one element
 
 D = np.arange(1000)
-print(D.size * D.itemsize) # NumPy - size of one element multiplied by the number of all elements, so we got the size of all elements
+print(D.size * D.itemsize) # NumPy - size of one element multiplied by the number of all elements,
+                            # so we got the size of all elements
 
 SIZE = 1000000
 L1 = range(SIZE)
@@ -61,7 +64,7 @@ print(a.sum(axis=0), "\n") #vertical axis |
 print("\n", np.sqrt(a)) #square
 print("\n", np.std(a)) #Standart Deviation (средне квадратическое отклонение)
 
-b = np.array([(7,5,10),(25,34,2),(0,1,3)])
+b = np.array([(7,5,10),(25,34,2),(7,1,3)])
 
 print("\n", a+b) #sum of matrices
 print("\n", a-b) #substraction of matrices
@@ -71,3 +74,15 @@ print("\n", a/b) #divide of matrices
 print("\n"*2,np.vstack((a,b))) #concatenation along the first axis ->
 print("\n"*2,np.hstack((a,b))) #stack arrays in sequence horizontaly (column wise)
 print("\n", a.ravel()) #into a single column
+
+x = np.arange(0, 3 * np.pi, 0.1 )
+y = np.sin(x)
+z = np.cos(x)
+plt.plot(x,y) #sin plot
+plt.plot(x,z) #cos plot
+plt.show()
+
+ar = np.array([2, 5, 10])
+print("\n", np.exp(ar)) #exponential
+print("\n", np.log(ar)) #natural log с основой 2
+print(np.log10(ar)) #с основой 10
