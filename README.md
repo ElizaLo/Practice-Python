@@ -6,5 +6,8 @@
   - [Day 2: Operators](https://www.hackerrank.com/challenges/30-operators/problem)
   - [Day 3: Intro to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements/problem)
 
+- ## *Hack Probability*
+  - [Description](https://github.com/ElizaLo/Practice/blob/master/Hack%20Probability/Lab3.pages)
+
 - ## *NumPy*
   - [NumPy Tutorial](https://www.youtube.com/watch?v=8JfDAm9y_7s)
