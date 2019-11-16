@@ -1,4 +1,12 @@
 # Practice Python
+
+## Pybind11
+
+Seamless operability between C++11 and Python
+
+  - [GitHub](https://github.com/pybind/pybind11)
+  - [Documentation](https://pybind11.readthedocs.io/en/master/)
+
 - ## *30 Days of Code*
 
   - [Day 0: Hello, World.](https://www.hackerrank.com/challenges/30-hello-world/problem)
