@@ -1,11 +1,19 @@
 # Practice Python
 
+- ## [Voice Assistant](https://github.com/ElizaLo/Practice-Python/tree/master/Voice%20Assistant)
+
+  - [src](https://github.com/ElizaLo/Practice-Python/blob/master/Voice%20Assistant/src/main.py)
+
 - ## Pybind11
 
  Seamless operability between C++11 and Python
  
    - [GitHub](https://github.com/pybind/pybind11)
    - [Documentation](https://pybind11.readthedocs.io/en/master/)
+   
+- ## [PyPI](https://pypi.org)
+
+The Python Package Index (PyPI) is a repository of software for the Python programming language.
 
 - ## *30 Days of Code*
 
