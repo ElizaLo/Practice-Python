@@ -32,6 +32,8 @@ def status():
         'name': 'LiveChat',
         #'date': curr_date,
         'time': datetime.now().strftime('%Y/%m/%d %H:%M:%S'),
+        'messages_count': len(messages),
+        'users_count': len(users)
     }
 
 
