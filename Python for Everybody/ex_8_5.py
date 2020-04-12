@@ -16,8 +16,8 @@ count = 0
 
 for line in fh:
     line = line.rstrip()
-    if not line.startswith('From'): continue
-    if line.startswith('From:'): continue
+    if not line.startswith('From') or line.startswith('From:'): continue
+    # if line.startswith('From:'): continue
     words = line.split()
     print(words[1])
     count = count + 1
