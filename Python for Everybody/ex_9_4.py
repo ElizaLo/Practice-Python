@@ -9,14 +9,15 @@ name = input("Enter file:")
 if len(name) < 1 : name = "mbox-short.txt"
 handle = open(name)
 
+
 counts = dict()
 
 for line in handle:
-    line = line.rstrip()
     if not line.startswith('From') or line.startswith('From:'): continue
     words = line.split()
     word = words[1]
     counts[word] = counts.get(word, 0) + 1
+
 
 bigcount = None
 bigword = None
@@ -26,4 +27,3 @@ for word, count in counts.items():
         bigcount = count
 
 print(bigword, bigcount)
-
