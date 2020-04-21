@@ -23,3 +23,6 @@
 - `SELECT * FROM Users`
 - `SELECT * FROM Users WHERE email = 'csev@umich.edu'`
 - `SELECT * FROM Users ORDER BY emails`
+
+
+- `select Album.title, Artist.name from Album join Artist on Album.artist_id = Artist.id`
