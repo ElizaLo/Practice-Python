@@ -1,5 +1,9 @@
 # Practice Python
 
+## 🔹 Coursera courses
+
+- [Specialization: Python for Everybody](https://github.com/ElizaLo/Practice-Python/tree/master/Python%20for%20Everybody)
+
 - ## [Voice Assistant](https://github.com/ElizaLo/Practice-Python/tree/master/Voice%20Assistant)
 
   - [src](https://github.com/ElizaLo/Practice-Python/blob/master/Voice%20Assistant/src/main.py)
