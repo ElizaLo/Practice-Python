@@ -4,6 +4,10 @@
 
 - [Specialization: Python for Everybody](https://github.com/ElizaLo/Practice-Python/tree/master/Python%20for%20Everybody)
 
+## Regular Expressions: Regexes in Python
+
+   - [Regular Expressions: Regexes in Python](https://realpython.com/regex-python/)
+
 - ## [Voice Assistant](https://github.com/ElizaLo/Practice-Python/tree/master/Voice%20Assistant)
 
   - [src](https://github.com/ElizaLo/Practice-Python/blob/master/Voice%20Assistant/src/main.py)
