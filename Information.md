@@ -6,3 +6,8 @@
 - ## Boolean Expressions
   - `=` is an **assignment operator**
   - `==` is a **comparison operator**
+
+- ## Precedence of Operators
+
+Python documentation [Operator precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence).
+
