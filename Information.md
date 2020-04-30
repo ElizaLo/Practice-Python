@@ -103,7 +103,11 @@ Python documentation [Operator precedence](https://docs.python.org/3/reference/e
   a = "banana"
   b = "banana"
   print(a is b)
+```
   
+ In Python, every object has a unique identification tag. Likewise, there is a built-in function that can be called on any object to return its unique id. The function is appropriately called `id` and takes a single parameter, the object that you are interested in knowing about.
+ 
+```python
   print(id(a))
   print(id(b))
-  ```
+```
