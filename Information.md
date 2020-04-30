@@ -114,6 +114,7 @@ Python documentation [Operator precedence](https://docs.python.org/3/reference/e
 
 - ## String
   - `.format()` Method
+  
   Since braces have special meaning in a format string, there must be a special rule if you want braces to actually be included in the final formatted string. The rule is to double the braces: \{\{ and \}\}. For example mathematical set notation uses braces. The initial and final doubled braces in the format string below generate literal braces in the formatted string:
 ```python
 a = 5
