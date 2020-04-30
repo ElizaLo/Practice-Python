@@ -38,20 +38,45 @@ Python documentation [Operator precedence](https://docs.python.org/3/reference/e
     
     - **_Methods_**
       - `append` (Adds the argument passed to it to the end of the list)
+      ```python
+      mylist.append(5)
+      ```
       - `insert`
+      ```python
+      mylist.insert(1, 12)
+      ```
       - `reverse`
+      ```python
+      mylist.reverse()
+      ```
       - `sort`
+      ```python
+      mylist.sort()
+      ```
       - `remove`
+      ```python
+      mylist.remove(5)
+      ```
       - `pop`
         - With **no parameter**, will remove and return the last item of the list
         - If **provide a parameter** for the position, pop will remove and return the item at that position
+        
+          ```python
+          mylist.pop()
+          ```
   
     - ## Non-Mutating Methods
     **Non-mutating methods** do not change the object after the method has been used.
   - **_Methods_**
   
      - `count` (Count returns the number of occurances of the argument given but does not change the original string or list)
+     ```python
+     mylist.count(12)
+     ```
      - `index` (Index returns the leftmost occurance of the argument but does not change the original string or list)
+     ```python
+     mylist.index(3)
+     ```
      
   The following table provides a summary of the list methods shown above. The column labeled `result` gives an explanation as to what the return value is as it relates to the new value of the list. The word **mutator** means that the list is changed by the method but nothing is returned (actually `None` is returned). A **hybrid** method is one that not only changes the list but also returns a value as its result. Finally, if the result is simply a return, then the list is unchanged by the method.
   
