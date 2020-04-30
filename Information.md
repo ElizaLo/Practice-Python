@@ -1,3 +1,5 @@
+- [Built-in Types](https://docs.python.org/3/library/stdtypes.html#built-in-types) (Python Documentation)
+
 - ## Boolean Expressions
   - `=` is an **assignment operator**
   - `==` is a **comparison operator**
@@ -30,6 +32,30 @@ Python documentation [Operator precedence](https://docs.python.org/3/reference/e
   alist = ['a', 'b', 'c', 'd', 'e', 'f']
   del alist[1:5]
   ```
+  
+    - ## Mutating Methods
+    **Mutating methods** are ones that change the object after the method has been used. 
+    
+    - **_Methods_**
+      - `append` (Adds the argument passed to it to the end of the list)
+      - `insert`
+      - `reverse`
+      - `sort`
+      - `remove`
+      - `pop`
+        - With **no parameter**, will remove and return the last item of the list
+        - If **provide a parameter** for the position, pop will remove and return the item at that position
+  
+    - ## Non-Mutating Methods
+    **Non-mutating methods** do not change the object after the method has been used.
+  - **_Methods_**
+  
+     - `count` (Count returns the number of occurances of the argument given but does not change the original string or list)
+     - `index` (Index returns the leftmost occurance of the argument but does not change the original string or list)
+     
+  The following table provides a summary of the list methods shown above. The column labeled `result` gives an explanation as to what the return value is as it relates to the new value of the list. The word **mutator** means that the list is changed by the method but nothing is returned (actually `None` is returned). A **hybrid** method is one that not only changes the list but also returns a value as its result. Finally, if the result is simply a return, then the list is unchanged by the method.
+  
+  <img src="https://github.com/ElizaLo/Practice-Python/blob/master/Python%203%20Programming/List_Methods.png" width="695" height="382">
   
   - ## `+=` and `obj = obj + object_two`
   
