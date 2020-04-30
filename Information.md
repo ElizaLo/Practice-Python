@@ -30,6 +30,21 @@ Python documentation [Operator precedence](https://docs.python.org/3/reference/e
   alist = ['a', 'b', 'c', 'd', 'e', 'f']
   del alist[1:5]
   ```
+  
+  - ## `+=` and `obj = obj + object_two`
+  
+    - `obj = obj + object_two` - makes a new object entirely and reassigns to `obj`
+    ``` python
+     x = ["dogs", "cats", "birds", "reptiles"]
+     y = x
+     y = y + ['sheep']
+    ```
+    - `obj += object_two` -  changes the original object so that the contents of `object_two` are added to the end of the first.
+    ```python
+    x = ["dogs", "cats", "birds", "reptiles"]
+    y = x
+    x += ['fish', 'horses']
+    ```
  
  - ## Objects and References
  
