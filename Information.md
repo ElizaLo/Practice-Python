@@ -134,3 +134,13 @@ setStr = 'The set is \{\{\{}, {}}}.'.format(a, b)
 
 1. Evaluates the expression on the right-hand side to yield some python object;
 2. Sets the instance variable `<varname>` of `<obj>` to be bound to that python object. Note that an assignment statement of this form never sets the class variable; it only sets the instance variable.
+
+## Inheriting Variables and Methods
+
+**This is how the interpreter looks up attributes:**
+
+1. First, it checks for an instance variable or an instance method by the name it’s looking for.
+2. If an instance variable or method by that name is not found, it checks for a class variable.
+3. If no class variable is found, it looks for a class variable in the parent class.
+4. If no class variable is found, the interpreter looks for a class variable in THAT class’s parent (the “grandparent” class).
+5. This process goes on until the last ancestor is reached, at which point Python will signal an error.
