@@ -144,3 +144,7 @@ setStr = 'The set is \{\{\{}, {}}}.'.format(a, b)
 3. If no class variable is found, it looks for a class variable in the parent class.
 4. If no class variable is found, the interpreter looks for a class variable in THAT class’s parent (the “grandparent” class).
 5. This process goes on until the last ancestor is reached, at which point Python will signal an error.
+
+## Invoking the Parent Class’s Method
+
+Call `super().feed()`. This is nice because it’s easier to read, and also because it puts the specification of the class that Dog inherits from in just one place, `class Dog(Pet)`. Elsewhere, you just refer to `super()` and python takes care of looking up that the parent (super) class of Dog is Pet
