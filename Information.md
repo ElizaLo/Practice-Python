@@ -160,3 +160,11 @@ Python provides a statement called `assert`.
 - If that expression evaluates to the Boolean `False`, then the interpreter will raise a runtime error.
 - If the expression evaluates to `True`, then nothing happens and the execution goes on to the next line of code.
 
+## Writing Test Cases for Functions
+
+A useful function will do some combination of three things, given its input parameters:
+
+- Return a value. For these, you will write return **value tests**.
+- Modify the contents of some mutable object, like a list or dictionary. For these you will write **side effect tests**.
+- Print something or write something to a file. Tests of whether a function generates the right printed output are beyond the scope of this testing framework; you won’t write these tests.
+
