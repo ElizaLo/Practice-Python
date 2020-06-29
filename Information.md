@@ -171,3 +171,21 @@ A useful function will do some combination of three things, given its input para
 To deal with increasingly complex programs, we are going to suggest a technique called **incremental development**. The goal of incremental development is to avoid long debugging sessions by adding and testing only a small amount of code at a time.
 
 **If you write unit tests before doing the incremental development, you will be able to track your progress as the code passes more and more of the tests. Alternatively, you can write additional tests at each stage of incremental development.**
+
+##
+
+With **try/except**, you tell the python interpreter:
+
+  - **Try to execute a block of code, the “try” clause.**
+    - If the whole block of code executes without any run-time errors, just carry on with the rest of the program after the try/except statement.
+  - **If a run-time error does occur during execution of the block of code:**
+    - skip the rest of that block of code (but don’t exit the whole program)
+    - execute a block of code in the “except” clause
+    - then carry on with the rest of the program after the try/except statement
+    
+    ```python
+    try:
+      <try clause code block>
+    except <ErrorType>:
+      <exception handler code block>
+    ```
