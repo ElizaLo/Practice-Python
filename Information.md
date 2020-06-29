@@ -148,3 +148,8 @@ setStr = 'The set is \{\{\{}, {}}}.'.format(a, b)
 ## Invoking the Parent Class’s Method
 
 Call `super().feed()`. This is nice because it’s easier to read, and also because it puts the specification of the class that Dog inherits from in just one place, `class Dog(Pet)`. Elsewhere, you just refer to `super()` and python takes care of looking up that the parent (super) class of Dog is Pet
+
+# Test Cases
+
+- **Unit tests** check that small bits of code are correctly implemented. 
+- **Functional tests** check that larger chunks of code work correctly.
