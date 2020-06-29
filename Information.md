@@ -153,3 +153,10 @@ Call `super().feed()`. This is nice because it’s easier to read, and also beca
 
 - **Unit tests** check that small bits of code are correctly implemented. 
 - **Functional tests** check that larger chunks of code work correctly.
+
+Python provides a statement called `assert`.
+
+- Following the word assert there will be a python expression.
+- If that expression evaluates to the Boolean `False`, then the interpreter will raise a runtime error.
+- If the expression evaluates to `True`, then nothing happens and the execution goes on to the next line of code.
+
