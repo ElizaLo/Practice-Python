@@ -168,3 +168,6 @@ A useful function will do some combination of three things, given its input para
 - Modify the contents of some mutable object, like a list or dictionary. For these you will write **side effect tests**.
 - Print something or write something to a file. Tests of whether a function generates the right printed output are beyond the scope of this testing framework; you won’t write these tests.
 
+To deal with increasingly complex programs, we are going to suggest a technique called **incremental development**. The goal of incremental development is to avoid long debugging sessions by adding and testing only a small amount of code at a time.
+
+**If you write unit tests before doing the incremental development, you will be able to track your progress as the code passes more and more of the tests. Alternatively, you can write additional tests at each stage of incremental development.**
