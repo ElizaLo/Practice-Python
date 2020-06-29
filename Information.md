@@ -172,7 +172,7 @@ To deal with increasingly complex programs, we are going to suggest a technique 
 
 **If you write unit tests before doing the incremental development, you will be able to track your progress as the code passes more and more of the tests. Alternatively, you can write additional tests at each stage of incremental development.**
 
-##
+# Exception
 
 With **try/except**, you tell the python interpreter:
 
@@ -188,4 +188,14 @@ With **try/except**, you tell the python interpreter:
       <try clause code block>
     except <ErrorType>:
       <exception handler code block>
+    ```
+   
+   ```python
+   try:
+    items = ['a', 'b']
+    third = items[2]
+    print("This won't print")
+  except Exception as e:
+    print("got an error")
+    print(e)
     ```
