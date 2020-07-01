@@ -174,6 +174,8 @@ To deal with increasingly complex programs, we are going to suggest a technique 
 
 # Exception
 
+- [Errors and Exceptions](https://docs.python.org/3/tutorial/errors.html#errors-and-exceptions)
+
 With **try/except**, you tell the python interpreter:
 
   - **Try to execute a block of code, the “try” clause.**
@@ -269,3 +271,14 @@ BaseException
            +-- BytesWarning
            +-- ResourceWarning
 ```
+
+## Language Exceptions
+<img src="https://github.com/ElizaLo/Practice-Python/blob/master/Python%203%20Programming/Language_Exceptions.png" width="692" height="666">
+
+## Math Exceptions
+<img src="https://github.com/ElizaLo/Practice-Python/blob/master/Python%203%20Programming/Math_Exceptions.png" width="689" height="524">
+
+## Other Exceptions
+<img src="https://github.com/ElizaLo/Practice-Python/blob/master/Python%203%20Programming/Other_Exceptions.png" width="682" height="368">
+
+
