@@ -3,6 +3,8 @@
 ## 🔹 Coursera courses
 
 - [Specialization: Python for Everybody](https://github.com/ElizaLo/Practice-Python/tree/master/Python%20for%20Everybody)
+- [Specialization: Python 3](https://github.com/ElizaLo/Practice-Python/tree/master/Python%203%20Programming)
+- [Программирование на Python](https://github.com/ElizaLo/Practice-Python/tree/master/Programming%20on%20Python%20Course)
 
 ## Regular Expressions: Regexes in Python
 
