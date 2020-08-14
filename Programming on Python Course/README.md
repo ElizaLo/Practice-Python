@@ -51,4 +51,18 @@
 - [Пример про списки](https://d3c33hcgiwev3.cloudfront.net/_a18d9e87a4957e540292c01e41a339b5_median.slides.html?Expires=1595203200&Signature=WFm1OgpSNRXz9CB9qeRGmoyptT~18CM1ua29P6RnFqJcSnQmuPKspPdgaNbzH8qa-mmfS~wUVelttDWgAJpcqlxo3OjcO5OlEqqAoG9eAiSHkAdi5m8QAvyQ4wS~zQjU9pogWY4lFcLul6oKqv5TkbNLuy65qCeHzQw6EVJmHOY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Пример про словари](https://d3c33hcgiwev3.cloudfront.net/_a18d9e87a4957e540292c01e41a339b5_zen.slides.html?Expires=1595203200&Signature=GRq8OUm0bmoUnlVCgAOrePUlNUKQQglQBnWJo9uD2PU09UWydKU-MimP0lVW-H53IKNG7BR2bcx26BCi179z5n8Bu0uF3J5ScSh~jrap8yvl9MrkQqq9NEov1hehdHucP1YBcSCC-ewZM0emp1H5~DrCM7K4M6y3rwDPGmubzQo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Пример про множества](https://d3c33hcgiwev3.cloudfront.net/_a18d9e87a4957e540292c01e41a339b5_randint.slides.html?Expires=1595203200&Signature=YU1hLQZEO2VegiyZqFX~BopLUPAAs0BnMny1Ml~Y69WeWdHrwFaSQavVcFHLMXRhTQRy0pDFiRtAcg1jIW9BMXffKm6Yqt0WfBMKezNjj6AwOddB7pw3U7zLNAT9F3f1UY00XyI40e8B0BzUutoV1X2Uyf1q8b1Mo8afvsYbY~M_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
--
+- [Функции](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_functions.slides.html?Expires=1597536000&Signature=SaPv-TtM6fgmFOQY6ElsIq7bgMYQxybFyd7X7ptoIHfTk~uLRBb2opIjXF4quQIEIl7DlbVuoA7pHpRH~XpuFSmqADR38gdrNF0-G~cLy-F-byN9oB52dfhhPh7xCcsOrkKSQRCNYWMd0Tu8jpBHR8s-mmgFomnmSlYH5f6oKjM_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+- [Файлы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_files.slides.html?Expires=1597536000&Signature=W9-9HSjUnvS3pYEROADoSjtlpQ1xxBCngZP7EvBuDxgCzNUkthB9tsmbHOoAtQMUUd70rT6XlZU1NgMOzbrURId8T3qGXTcQEHNexP5tiJpA~aneK2SaNVpyyQcCMfoVN7dOjVvJ0qHDptWwWqTgAPM-EliCRfIJv04VVIFICrY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+- [Функциональное программирование](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_functionalprogramming.slides.html?Expires=1597536000&Signature=lEjRHxZfTJ7S-nTaBkPOR5MmdV86h1mGdRTPKDy1aiJJSGepD1bMCNuZE~zExhiylRi~ymsPmf1Ya0sunjC7bEpGpKnsbztOPCl5CEtDl8TCb04Cj8Wja7NPy3zXIg8BXOtom2bmuTekjwRBRwOD~eolgx9uGQEF1FTjez5~cO0_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+- [Декораторы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_decorators.slides.html?Expires=1597536000&Signature=RJu8HJhU~GMotbUTwhq08zoRHs806aNirI61pweN3BOo~CFK0ULhdu3rBMtk2Pllh-HrLmPpocgsnI5rQZVseowcDCmRAu4tiXFIOUdWb0~ZyD~knSUKoUVAm2-wUm7c-1CzkCwmXB6cAaqMdJG0Vp-BIq4l5~9EfIsTuwhtH18_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+- [Генераторы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_generators.slides.html?Expires=1597536000&Signature=QdP8SnRPaIiJhuAMCEViH5ldjzGG-ytd0BdqUTq5W5ronTBFfm4Oo850SfQ~U2vUTbUc4zIjrEt69zv6M9tiZVE2-Q80QjD8ydwSlVGvOPf9UvSo4pnTAAMg1atvvN3uCWmaeuHc57-TUBk5BD0~GZdkE52Au4jk3XliPKC8CtY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
+
+### Документация
+
+- [Туториал по функциям из документации](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
+- [Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
+- [Built-in Functions](https://docs.python.org/3/library/functions.html)
+- [Sorting](https://docs.python.org/3/howto/sorting.html)
+- [Functional Programming](https://docs.python.org/3/howto/functional.html)
+- [functools — Higher-order functions and operations on callable objects](https://docs.python.org/3/library/functools.html)
+- [Decorators](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PythonDecorators.html)
