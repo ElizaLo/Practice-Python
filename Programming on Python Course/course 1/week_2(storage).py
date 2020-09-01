@@ -51,4 +51,4 @@ if __name__ == '__main__':
     elif args.key_name and args.value:
         storage.write(args.key_name, args.value)
     else:
-        print('Wrong command')
+        print('The program is called with invalid parameters.')
