@@ -57,7 +57,11 @@
 - [Декораторы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_decorators.slides.html?Expires=1597536000&Signature=RJu8HJhU~GMotbUTwhq08zoRHs806aNirI61pweN3BOo~CFK0ULhdu3rBMtk2Pllh-HrLmPpocgsnI5rQZVseowcDCmRAu4tiXFIOUdWb0~ZyD~knSUKoUVAm2-wUm7c-1CzkCwmXB6cAaqMdJG0Vp-BIq4l5~9EfIsTuwhtH18_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 - [Генераторы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_generators.slides.html?Expires=1597536000&Signature=QdP8SnRPaIiJhuAMCEViH5ldjzGG-ytd0BdqUTq5W5ronTBFfm4Oo850SfQ~U2vUTbUc4zIjrEt69zv6M9tiZVE2-Q80QjD8ydwSlVGvOPf9UvSo4pnTAAMg1atvvN3uCWmaeuHc57-TUBk5BD0~GZdkE52Au4jk3XliPKC8CtY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
+**_Week 3:_**
+
 ### Документация
+
+**_Week 2:_**
 
 - [Туториал по функциям из документации](https://docs.python.org/3/tutorial/controlflow.html#defining-functions)
 - [Reading and Writing Files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
@@ -66,3 +70,10 @@
 - [Functional Programming](https://docs.python.org/3/howto/functional.html)
 - [functools — Higher-order functions and operations on callable objects](https://docs.python.org/3/library/functools.html)
 - [Decorators](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/PythonDecorators.html)
+
+**_Week 3:_**
+
+- [Classes](https://docs.python.org/3.6/tutorial/classes.html)
+- [Object-Oriented Programming](https://www.python-course.eu/python3_object_oriented_programming.php)
+
+
