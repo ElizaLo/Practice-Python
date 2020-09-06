@@ -75,5 +75,8 @@
 
 - [Classes](https://docs.python.org/3.6/tutorial/classes.html)
 - [Object-Oriented Programming](https://www.python-course.eu/python3_object_oriented_programming.php)
+- [Class and Instance Attributes](https://www.python-course.eu/python3_class_and_instance_attributes.php)
+- [Properties vs. Getters and Setters](https://www.python-course.eu/python3_properties.php)
+- [Python/Объектно-ориентированное программирование на Python](https://ru.wikibooks.org/wiki/Python/Объектно-ориентированное_программирование_на_Python#Агрегация._Контейнеры._Итераторы)
 
 
