@@ -2,7 +2,7 @@
 
 **О специализации:**
 
-- **Курс 1. Погружение в Python**
+- [**Курс 1. Погружение в Python**](https://github.com/ElizaLo/Practice-Python/blob/master/Programming%20on%20Python%20Course/README.md#курс-1-погружение-в-python)
 
 Вы изучите конструкции языка, типы и структуры данных, функции, научитесь применять объектно-ориентированное и функциональное программирование.
 Узнаете про особенности реализации Python, научитесь писать асинхронный и многопоточный код.
@@ -58,6 +58,10 @@
 - [Генераторы](https://d3c33hcgiwev3.cloudfront.net/_dc3111e2054d0843184d3cbf912b144e_generators.slides.html?Expires=1597536000&Signature=QdP8SnRPaIiJhuAMCEViH5ldjzGG-ytd0BdqUTq5W5ronTBFfm4Oo850SfQ~U2vUTbUc4zIjrEt69zv6M9tiZVE2-Q80QjD8ydwSlVGvOPf9UvSo4pnTAAMg1atvvN3uCWmaeuHc57-TUBk5BD0~GZdkE52Au4jk3XliPKC8CtY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
 **_Week 3:_**
+
+- Классы и экземпляры ([Part 1](https://d3c33hcgiwev3.cloudfront.net/_19eb5299b58e2dc926f074c45df0ed10_classi_i_exemplyari_part_1.slides.html?Expires=1599523200&Signature=Xa6nYzlAykgJ5wGikKsSgcMhceJPUyDkHrO29JHUbpF5fHdSfE8ea7s8684rdOJusT4MdfiqI~KttfPqMKzH7dOh1bGzVhtAjOjGp1JL4Z4jz9jqHJk9yliNGJUV06JbqewHd9sx57IOx9MQF6iyoSZYGSA9HNimo~cePaMkF9Y_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A), [Part 2](https://d3c33hcgiwev3.cloudfront.net/_7ab638d78b9f0a4de4cbd20249a02688_classi_i_exemplyari_part_2.slides.html?Expires=1599523200&Signature=VInhgoUkxQFLF3PaAUsbKgoJCfpY6PbOV6UZKTWdZthJApNVl52dqzPRz1fL1RsiRoMrDRKkKq8MbJUIFuWAxVL~Ur3E7tNB8y0mQ3FO-u4FEZk5o0TDmBHs13q6NLY6IrWzvNwYei2e-nBQ96ric28kP8sk8vvlsjMWVR5y-rU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A))
+- Методы ([Part 1](https://d3c33hcgiwev3.cloudfront.net/_7ab638d78b9f0a4de4cbd20249a02688_metodi_part_1.slides.html?Expires=1599523200&Signature=YEpG5DXimKQU9TZMPS-XYUZWXCEflF4TitY7tt09RDkeqrUwTPpsCbdHM9YTMQtjrQfxsmDFp~pfOgfCKwjcD~CwRLfZLGKT809wYyi39WyPIg2M6XcyjzhNAzZx6qPWngoS70aPAXwGXqvYcnla4PXxcvXG20OQFiH47xkWxqo_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A), [Part 2](https://d3c33hcgiwev3.cloudfront.net/_7ab638d78b9f0a4de4cbd20249a02688_methodi_part_2.slides.html?Expires=1599523200&Signature=RUmjF~Txe6tNE0S2W~04nNlJ8REIRPIsBObi8~aOJRi9Oif7kgVUqRUUvYb9L4DGkDmBxhbDK813UTybDu1C-rVx3e9CSiQ7KjYMYrFh1tDPEKsEhfjNGvMbwDJk5SZyN3PLaVtFpfBJJdpmZEWoPfQJ-9QVj5jyq-vH6YTisl8_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A))
+- Пример на классы ([YahooWeatherForecast](https://d3c33hcgiwev3.cloudfront.net/_9db154b9cb5aaeacb9c3a1b69eed1482_03_primer_na_klassi.slides.html?Expires=1599523200&Signature=AaUmm2mU6ErrQcBSOFQGIwMj49GwSYm0UTA1M28xLvmDgvetv3opFA-Q5UyAqdsxeVsehPi5LrtxkPhX4OxKsPpJM9ApgizWcYbf3aZeGlWbGbCyAoFqF7vwGIrKovic-u6kD7C6B70YyZSEUu7Snd8a2hjaVsdWnFgM5uqOsRg_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A))
 
 ### Документация
 
