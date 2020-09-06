@@ -4,11 +4,14 @@
 
 ## Table of Contents
 
-- Practice
-- Projects
-- Useful
-- Online Resources
-- Usefull Articles to read later
+- [Practice](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#practice)
+- [Projects](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#projects)
+   - [Small](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#small)
+- [Useful](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#useful)
+- [Online Resources](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#online-resources)
+   - [English](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#english)
+   - [Russian](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#russian)
+- [Usefull Articles to read later](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#usefull-articles-to-read-later)
 
 ## Practice 
 
@@ -38,7 +41,7 @@
 ## Useful
    
 - [PyPI](https://pypi.org)
-   > The Python Package Index (PyPI) is a repository of software for the Python programming language.
+   - > The Python Package Index (PyPI) is a repository of software for the Python programming language.
 
 
 ## Online Resources
@@ -47,10 +50,12 @@
 
 - [Real Python Tutorials](https://realpython.com)
 - [PyPI](https://pypi.org)
-   > The Python Package Index (PyPI) is a repository of software for the Python programming language.
+   - > The Python Package Index (PyPI) is a repository of software for the Python programming language.
    
 ### Russian 
 
+   - [Рефакторинг.Гуру](https://refactoring.guru/ru)
+      - > Посвящён тёмным материям программирования: **рефакторингу, паттернам проектирования, принципам SOLID** и другим важным темам из мира программирования.
    - [Самоучитель Python](https://pythonworld.ru/samouchitel-python)
    - [Руководство по языку программирования Python](https://metanit.com/python/tutorial/)
 
@@ -59,3 +64,6 @@
 
 - [Real Python Tutorials](https://realpython.com):
    - [Regular Expressions: Regexes in Python](https://realpython.com/regex-python/)
+   
+- [Рефакторинг.Гуру](https://refactoring.guru/ru)
+   - [Фабричный метод на Python](https://refactoring.guru/ru/design-patterns/factory-method/python/example)
