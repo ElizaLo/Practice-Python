@@ -49,6 +49,7 @@
 ### English
 
 - [Real Python Tutorials](https://realpython.com)
+- [Python Course](https://www.python-course.eu/index.php)
 - [PyPI](https://pypi.org)
    - > The Python Package Index (PyPI) is a repository of software for the Python programming language.
    
