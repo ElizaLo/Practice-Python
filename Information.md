@@ -135,6 +135,21 @@ setStr = 'The set is \{\{\{}, {}}}.'.format(a, b)
 1. Evaluates the expression on the right-hand side to yield some python object;
 2. Sets the instance variable `<varname>` of `<obj>` to be bound to that python object. Note that an assignment statement of this form never sets the class variable; it only sets the instance variable.
 
+**B каком порядке выполняются магические методы new, init и call при создании объекта?**
+
+```python
+class Class:
+  def __new__(cls): pass
+  def __init__(self): pass
+  def __call__(self): pass
+
+new_obj = Class()
+```
+
+- Магический метод call используется **_при вызове экземпляра класса, а не самого класса_**.
+
+‼️ Однако, если класс с переопределённым методом call является метаклассом (о них мы поговорим чуть позже), то экземпляром этого класса является новый класс. А это значит, что при создании объекта класса, метаклассом которого является класс с переопределённым магическим методом call, вызывается этот самый метод call. Причем вызывается он раньше new и init.
+
 ## Inheriting Variables and Methods
 
 **This is how the interpreter looks up attributes:**
