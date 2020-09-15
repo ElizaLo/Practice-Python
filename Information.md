@@ -1,4 +1,5 @@
 - [Built-in Types](https://docs.python.org/3/library/stdtypes.html#built-in-types) (Python Documentation)
+- [Data model](https://docs.python.org/3/reference/datamodel.html)
 
 - ## Boolean Expressions
   - `=` is an **assignment operator**
