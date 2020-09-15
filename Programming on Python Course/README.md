@@ -87,3 +87,6 @@
 - [Errors and Exceptions](https://docs.python.org/3.6/tutorial/errors.html)
 - [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 
+**_Week 4_**
+
+- [Data model](https://docs.python.org/3/reference/datamodel.html)
