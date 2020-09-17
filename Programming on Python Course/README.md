@@ -90,3 +90,5 @@
 **_Week 4_**
 
 - [Data model](https://docs.python.org/3/reference/datamodel.html)
+- [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
+- [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
