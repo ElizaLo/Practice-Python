@@ -1,5 +1,7 @@
 - [Built-in Types](https://docs.python.org/3/library/stdtypes.html#built-in-types) (Python Documentation)
 - [Data model](https://docs.python.org/3/reference/datamodel.html)
+- [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
+- [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
 
 - ## Boolean Expressions
   - `=` is an **assignment operator**
