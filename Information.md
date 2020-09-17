@@ -1,19 +1,35 @@
 ## Table of Contents
 
-- [Read]()
-- [Boolean Expressions]()
-- [Precedence of Operators]()
-- [`for` loop]()
-- [List]()
-  - [Cloning Lists]()
-  - [List Element Deletion]()
-  - [Mutating Methods]()
-  - [Non-Mutating Methods]()
+- [Read](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#read)
+- [Boolean Expressions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#boolean-expressions)
+- [Precedence of Operators](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#precedence-of-operators)
+- [`for` loop](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#for-loop)
+- [List](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#list)
+  - [Cloning Lists](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#cloning-lists)
+  - [List Element Deletion](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#list-element-deletion)
+  - [Mutating Methods](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#mutating-methods)
+  - [Non-Mutating Methods](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#non-mutating-methods)
+  - [`+=` and `obj = obj + object_two`](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#-and-obj--obj--object_two)
+- [Objects and References](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#objects-and-references)
+- [String](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#string)
+- [Class](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#class)
+  - [Class Variables and Instance Variables](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#class-variables-and-instance-variables)
+  - [Inheriting Variables and Methods](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#inheriting-variables-and-methods)
+  - [Invoking the Parent Class’s Method](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#invoking-the-parent-classs-method)
+  - [Дескрипторы](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#дескрипторы)
+  - [`__slots__`](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#__slots__)
+  - [Метаклассы](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#метаклассы)
   - []()
-- [Class]()
-  - [Class Variables and Instance Variables]()
   - []()
-- []()  
+- [Test Cases](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#test-cases)  
+  - [Writing Test Cases for Functions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#writing-test-cases-for-functions)
+- [Exception](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#exception)
+  - [Standard Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#standard-exceptions)
+  - [Language Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#language-exceptions)
+  - [Math Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#math-exceptions)
+  - [Other Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#other-exceptions)
+- []()
+- []()
 
 ## Read
 
@@ -21,6 +37,7 @@
 - [Data model](https://docs.python.org/3/reference/datamodel.html)
 - [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
 - [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
+- [Descriptor HowTo Guide](https://docs.python.org/3/howto/descriptor.html)
 
 - ## Boolean Expressions
   - `=` is an **assignment operator**
@@ -432,6 +449,58 @@ print(Base.__subclasses__())
 
 {'a': <class '__main__.A'>, 'b': <class '__main__.B'>}
 [<class '__main__.A'>, <class '__main__.B'>]
+```
+
+## Абстрактные методы
+
+В Python-е абстрактные методы реализованы **в стандартной библиотеки abc**. Здесь также работают метаклассы — они могут создать абстрактный класс с методом `@abstractmethod`. Декоратор @abstractmethod гарантирует, что у нас не получится создать класс-наследник, не определив этот метод — мы обязаны его переопределить в классе, который наследуется от нашего класса. В следующем примере Child не переопределяет метод send, и поэтому вызывается ошибка:
+
+```python
+from abc import ABCMeta, abstractmethod
+
+class Sender(metaclass=ABCMeta):
+    @abstractmethod
+    def send(self):
+        """Do something"""
+```
+
+```python
+class Child(Sender): pass
+
+Child()
+
+----------------------------------------------------------------------------
+
+TypeError                                 Traceback (most recent call last)
+<ipython-input-15-5e10f1ccf1fd> in <module>()
+      1 class Child(Sender): pass
+      2 
+----> 3 Child()
+
+TypeError: Can't instantiate abstract class Child with abstract methods send
+```
+
+Переопределим метод send, и программа будет работать:
+
+```python
+class Child(Sender):
+    def send(self):
+        print('Sending')
+        
+
+Child()
+--------------------------------------
+
+<__main__.Child at 0x110cfa860>
+```
+
+На самом деле, абстрактные методы используются в Python-е довольно редко, чаще всего вызывается исключение `NotImplementedError`, которое говорит о том, что этот метод нужно реализовать. Программист видит в определении класса, что в методе вызываетсяraise `NotImplementedError`,и понимает,что этот метод нужно переопределить в потомке:
+
+```python
+class PythonWay:
+
+    def send(self):
+        raise NotImplementedError
 ```
 
 # Test Cases
