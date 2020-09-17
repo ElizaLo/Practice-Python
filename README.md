@@ -68,3 +68,6 @@
    
 - [Рефакторинг.Гуру](https://refactoring.guru/ru)
    - [Фабричный метод на Python](https://refactoring.guru/ru/design-patterns/factory-method/python/example)
+   
+- [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
+- [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
