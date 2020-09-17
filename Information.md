@@ -1,3 +1,22 @@
+## Table of Contents
+
+- [Read]()
+- [Boolean Expressions]()
+- [Precedence of Operators]()
+- [`for` loop]()
+- [List]()
+  - [Cloning Lists]()
+  - [List Element Deletion]()
+  - [Mutating Methods]()
+  - [Non-Mutating Methods]()
+  - []()
+- [Class]()
+  - [Class Variables and Instance Variables]()
+  - []()
+- []()  
+
+## Read
+
 - [Built-in Types](https://docs.python.org/3/library/stdtypes.html#built-in-types) (Python Documentation)
 - [Data model](https://docs.python.org/3/reference/datamodel.html)
 - [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
@@ -149,7 +168,7 @@ class Class:
 new_obj = Class()
 ```
 
-- Магический метод call используется **_при вызове экземпляра класса, а не самого класса_**.
+- Магический метод `__call__` используется **_при вызове экземпляра класса, а не самого класса_**.
 
 ‼️ Однако, если класс с переопределённым методом call является метаклассом (о них мы поговорим чуть позже), то экземпляром этого класса является новый класс. А это значит, что при создании объекта класса, метаклассом которого является класс с переопределённым магическим методом call, вызывается этот самый метод call. Причем вызывается он раньше new и init.
 
@@ -166,6 +185,254 @@ new_obj = Class()
 ## Invoking the Parent Class’s Method
 
 Call `super().feed()`. This is nice because it’s easier to read, and also because it puts the specification of the class that Dog inherits from in just one place, `class Dog(Pet)`. Elsewhere, you just refer to `super()` and python takes care of looking up that the parent (super) class of Dog is Pet
+
+## Дескрипторы
+
+Чтобы определить свой собственный дескриптор, нужно определить методы класса `__get__`, `__set__` или `__delete__`. После этого мы можем создать какой-то новый класс и в атрибут этого класса записать объект типа дескриптор. Теперь у данного объекта будет переопределено поведение при доступе к атрибуту (метод `__get__`), при присваивании значений (метод `__set__`) или при удалении (метод `__delete__`). Мы создадим объект класса Class и посмотрим, что будет происходить при обращении к атрибуту:
+
+```python
+class Descriptor:
+    def __get__(self, obj, obj_type):
+        print('get')
+        
+    def __set__(self, obj, value):
+        print('set')
+        
+    def __delete__(self, obj):
+        print('delete')
+
+
+class Class:
+    attr = Descriptor()
+    
+
+instance = Class()
+```
+Дескрипторы явялются мощным механизмом, который позволяет вам незаметно от пользователя переопределять поведение атрибутов в ваших классах. Например, мы можем определить **дескриптор Value**, который будет переопределять поведение при присваивании ему значения. Определим класс с атрибутом, который будет являться дескрип- тором, и будем наблюдать модифицированное поведение (умножение на 10) при присваивании значения
+
+```python
+class Value:
+    def __init__(self):
+        self.value = None
+    
+    @staticmethod
+    def _prepare_value(value):
+        return value * 10
+
+    def __get__(self, obj, obj_type):
+        return self.value
+    
+    def __set__(self, obj, value):
+        self.value = self._prepare_value(value)
+```
+```python
+class Class:
+    attr = Value()
+
+    
+instance = Class()
+instance.attr = 10
+
+print(instance.attr)
+```
+100
+
+Когда мы обращаемся к методу с помощью `obj.method`, возвращается **bound method** — метод, привязанный к определённому объекту. А если мы обращаемся к методу от Class, получаем **unbound method** — это просто функция. Как видите, один и тот же метод возвращает разные объекты в зависимости от того, как к нему обращаются. Это и есть поведение дескриптора:
+
+```python
+class Class:
+    def method(self):
+pass
+
+obj = Class()
+print(obj.method) print(Class.method)
+
+---------------------------------------
+
+<bound method Class.method of <__main__.Class object at 0x10ee77278>> 
+<function Class.method at 0x10ee3bea0>
+```
+
+
+Напишем свою реализацию этих декораторов `@staticmethod` и `@classmethod`. 
+
+**StaticMethod** будет просто сохранять функцию и возвращать её при вызове:
+
+```python
+class StaticMethod:
+    def __init__(self, func):
+        self.func = func
+
+    def __get__(self, obj, obj_type=None):
+        return self.func
+```
+
+В то же время, **ClassMethod** возвращает функцию, которая первым аргументом принимает `obj_type`, то есть класс:
+
+```python
+class ClassMethod:
+    def __init__(self, func):
+        self.func = func
+
+    def __get__(self, obj, obj_type=None):
+        if obj_type is None:
+            obj_type = type(obj)
+
+        def new_func(*args, **kwargs):
+            return self.func(obj_type, *args, **kwargs)
+
+        return new_func
+```
+
+## `__slots__`
+
+Последний пример дескрипторов в стандартной библиотеке Python — конструкция `__slots__`, которая позволяет определить класс с жестко заданным набором атрибутов. Как вы помните, у каждого класса есть словарь, в котором хранятся все его атрибуты. Очень часто это бывает излишне. У вас может быть огромное количество объек- тов, и вы не хотите создавать для каждого объекта словарь. В таком случае конструкция `__slots__` позволяет жестко задать количество элементов, которые ваш класс может содержать. В следующем примере мы постулируем, что в нашем классе должен быть только атрибут _anakin_. Если мы попытаемся добавить в наш класс еще один атрибут, ничего не получится:
+
+```python
+class Class:
+    __slots__ = ['anakin']
+    
+    def __init__(self):
+        self.anakin = 'the chosen one'
+
+        
+obj = Class()
+
+obj.luke = 'the chosen too'
+
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-14-66c0c798df1f> in <module>()
+      8 obj = Class()
+      9 
+---> 10 obj.luke = 'the chosen too'
+
+AttributeError: 'Class' object has no attribute 'luke'
+```
+
+### Пример на дескрипторы
+
+```python
+class ImportantValue:
+    def __init__(self, amount):
+        self.amount = amount
+    
+    def __get__(self, obj, obj_type):
+        return self.amount
+    
+    def __set__(self, obj, value):
+        with open('log.txt', 'w') as f:
+            f.write(str(value))
+            
+        self.amount = value
+    
+    
+class Account:
+    amount = ImportantValue(100)
+    
+bobs_account = Account()
+bobs_account.amount = 200
+
+with open('log.txt', 'r') as f:
+    print(f.read())
+    
+----------------------
+
+200
+```
+
+## Метаклассы
+
+У класса тоже есть тип — `type`, потому что type, создал наш класс. В данном случае `type`, является **метаклассом**, **_т.е. он создаёт другие классы_**:
+
+```python
+type(Class)
+----------------
+type
+```
+
+Очень важно понимать разницу между созданием и наследованием. В данном случае класс **не является subclass-ом type**. Type его создаёт, но класс не наследуется от него, а наследуется от класса object:
+
+```python
+issubclass(Class, type)
+False
+
+issubclass(Class, object)
+True
+```
+
+Для создания классов используется ме- такласс type, и вы можете на лету создать класс, вызвав type и передав ему название класса. Для примера создадим класс **NewClass без родителей и атрибутов**. Это настоящий класс, мы создали его на лету без использования литерала class:
+
+```python
+NewClass = type('NewClass', (), {})
+
+print(NewClass)
+print(NewClass())
+
+------------------------
+
+<class '__main__.NewClass'>
+<__main__.NewClass object at 0x110cd7438>
+```
+
+Чаще всего классы создаются с помощью метаклассов. Давайте определим свой собственный метакласс Meta, который будет управлять поведением при создании класса. Для того чтобы он бы метаклассом, он должен наследоваться от другого метакласса (type). Метод метакласса `__new__` принимает название класса, его родителей и атрибуты. Мы можем определить новый класс A и указать, что его метаклассом является Meta. Именно этот метакласс и будет управлять поведением при создании нового класса. Таким образом, мы можем переопределить поведение при создании класса (например, добавить ему атрибут или сделать что-нибудь другое):
+
+```python
+class Meta(type):
+    def __new__(cls, name, parents, attrs):
+        print('Creating {}'.format(name))
+
+        if 'class_id' not in attrs:
+            attrs['class_id'] = name.lower()
+
+        return super().__new__(cls, name, parents, attrs)
+
+
+class A(metaclass=Meta):
+    pass
+    
+-------------------------
+
+Creating A
+```
+
+Например, мы можем определить метакласс, который переопределяет функцию `__init__`, и тогда каждый класс, созданный этим метаклассом, будет запоминать все созданные подклассы. Новый `__init__` записывает свой собственный атрибут, в котором будет храниться словарь созданных классов. В следующем примере у нас вначале создаётся класс Base, метаклассом которого является Meta, и у него создаётся атрибут класса registry, в который мы будем записывать все его подклассы. Каждый раз, когда у нас создаётся какой-то класс, который наследуется от Base, мы записываем в registry со- ответствующее значение, то есть название созданного класса и ссылку на него:
+
+```python
+class Meta(type):
+    def __init__(cls, name, bases, attrs):
+        print('Initializing — {}'.format(name))
+
+        if not hasattr(cls, 'registry'):
+            cls.registry = {}
+        else:
+            cls.registry[name.lower()] = cls
+            
+        super().__init__(name, bases, attrs)
+        
+        
+class Base(metaclass=Meta): pass
+
+class A(Base): pass
+
+class B(Base): pass
+
+---------------------------------------------
+
+Initializing — Base
+Initializing — A
+Initializing — B
+```
+
+```python
+print(Base.registry)
+print(Base.__subclasses__())
+
+-------------------------------------------------------
+
+{'a': <class '__main__.A'>, 'b': <class '__main__.B'>}
+[<class '__main__.A'>, <class '__main__.B'>]
+```
 
 # Test Cases
 
