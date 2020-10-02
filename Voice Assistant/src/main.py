@@ -3,7 +3,7 @@ import playsound
 from gtts import gTTS
 import speech_recognition as sr
 
-
+#function to listen the audio
 def listen():
     # obtain audio from the microphone
     r = sr.Recognizer()
@@ -25,7 +25,7 @@ def listen():
         return 'Error'
 
 
-
+#function to say the text
 def say(text):
     voice = gTTS(text, lang = "ru")
     unique_filename = "audio_" + str(random.randint(0, 100000)) + ".mp3"
@@ -33,7 +33,7 @@ def say(text):
     playsound.playsound(unique_filename)
     print("Assistant:", text)
 
-
+#function to handle the message 
 def handle_message(message):
     message = message.lower()
     if "привет" in message:
@@ -44,7 +44,7 @@ def handle_message(message):
         say("Я такой команды не знаю")
 
 
-
+#finish function 
 def finish():
     print("Пока")
     exit()
