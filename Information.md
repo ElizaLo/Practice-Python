@@ -38,6 +38,7 @@
 - [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
 - [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
 - [Descriptor HowTo Guide](https://docs.python.org/3/howto/descriptor.html)
+- [Python: статические методы, методы класса и экземпляра класса](https://medium.com/nuances-of-programming/python-статические-методы-методы-класса-и-экземпляра-класса-3e8529d24786)
 
 - ## Boolean Expressions
   - `=` is an **assignment operator**
