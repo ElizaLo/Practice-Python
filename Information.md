@@ -28,7 +28,7 @@
   - [Language Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#language-exceptions)
   - [Math Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#math-exceptions)
   - [Other Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#other-exceptions)
-- []()
+- [Debugging and Testing in Python]()
 - []()
 
 ## Read
@@ -647,4 +647,9 @@ BaseException
 ## Other Exceptions
 <img src="https://github.com/ElizaLo/Practice-Python/blob/master/Python%203%20Programming/Other_Exceptions.png" width="682" height="368">
 
+## Debugging and Testing in Python
 
+- [pdb](https://docs.python.org/3/library/pdb.html) — The Python Debugger 
+- [unittest](https://docs.python.org/3/library/unittest.html) — Unit testing framework
+- [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) — mock object library
+  - [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html) — getting started
