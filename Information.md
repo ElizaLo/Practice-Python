@@ -28,7 +28,7 @@
   - [Language Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#language-exceptions)
   - [Math Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#math-exceptions)
   - [Other Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#other-exceptions)
-- [Debugging and Testing in Python]()
+- [Debugging and Testing in Python](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#debugging-and-testing-in-python)
 - []()
 
 ## Read
