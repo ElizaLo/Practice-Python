@@ -92,3 +92,7 @@
 - [Data model](https://docs.python.org/3/reference/datamodel.html)
 - [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
 - [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
+- [pdb](https://docs.python.org/3/library/pdb.html) — The Python Debugger 
+- [unittest](https://docs.python.org/3/library/unittest.html) — Unit testing framework
+- [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) — mock object library
+  - [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html) — getting started
