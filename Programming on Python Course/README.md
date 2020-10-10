@@ -96,3 +96,9 @@
 - [unittest](https://docs.python.org/3/library/unittest.html) — Unit testing framework
 - [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) — mock object library
   - [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html) — getting started
+  
+**_Week 4_**
+
+- [multiprocessing](https://docs.python.org/3.6/library/multiprocessing.html) — Process-based parallelism
+- [threading](https://docs.python.org/3.6/library/threading.html) - — Thread-based parallelism
+- [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) — Launching parallel tasks
