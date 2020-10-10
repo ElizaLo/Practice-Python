@@ -29,6 +29,7 @@
   - [Math Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#math-exceptions)
   - [Other Exceptions](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#other-exceptions)
 - [Debugging and Testing in Python](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#debugging-and-testing-in-python)
+- [Parallelism in Python](https://github.com/ElizaLo/Practice-Python/blob/master/Information.md#parallelism-in-python)
 - []()
 
 ## Read
@@ -653,3 +654,9 @@ BaseException
 - [unittest](https://docs.python.org/3/library/unittest.html) — Unit testing framework
 - [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) — mock object library
   - [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html) — getting started
+  
+## Parallelism in Python
+
+- [multiprocessing](https://docs.python.org/3.6/library/multiprocessing.html) — Process-based parallelism
+- [threading](https://docs.python.org/3.6/library/threading.html) - — Thread-based parallelism
+- [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) — Launching parallel tasks
