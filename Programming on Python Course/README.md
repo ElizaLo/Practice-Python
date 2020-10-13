@@ -97,8 +97,9 @@
 - [unittest.mock](https://docs.python.org/3/library/unittest.mock.html) — mock object library
   - [unittest.mock](https://docs.python.org/3/library/unittest.mock-examples.html) — getting started
   
-**_Week 4_**
+**_Week 5_**
 
 - [multiprocessing](https://docs.python.org/3.6/library/multiprocessing.html) — Process-based parallelism
 - [threading](https://docs.python.org/3.6/library/threading.html) - — Thread-based parallelism
 - [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) — Launching parallel tasks
+- [socket](https://docs.python.org/3.6/library/socket.html) — Low-level networking interface
