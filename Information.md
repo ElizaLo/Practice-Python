@@ -660,3 +660,4 @@ BaseException
 - [multiprocessing](https://docs.python.org/3.6/library/multiprocessing.html) — Process-based parallelism
 - [threading](https://docs.python.org/3.6/library/threading.html) - — Thread-based parallelism
 - [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) — Launching parallel tasks
+- [socket](https://docs.python.org/3.6/library/socket.html) — Low-level networking interface
