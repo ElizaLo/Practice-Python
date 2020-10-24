@@ -103,3 +103,7 @@
 - [threading](https://docs.python.org/3.6/library/threading.html) - — Thread-based parallelism
 - [concurrent.futures](https://docs.python.org/3/library/concurrent.futures.html) — Launching parallel tasks
 - [socket](https://docs.python.org/3.6/library/socket.html) — Low-level networking interface
+- [select](https://docs.python.org/3.6/library/select.html) — Waiting for I/O completion
+- [PEP 380 -- Syntax for Delegating to a Subgenerator](https://www.python.org/dev/peps/pep-0380/)
+- [asyncio](https://docs.python.org/3.6/library/asyncio.html) — Asynchronous I/O, event loop, coroutines and tasks
+- [Примеры использования asyncio: HTTPServer?!](https://habr.com/ru/post/217143/)
