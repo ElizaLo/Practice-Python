@@ -46,6 +46,12 @@
 
 ## Online Resources
 
+## Cources
+
+- Coursera
+   - [Специализация Основы компьютерных вычислений](https://www.coursera.org/specializations/computer-fundamentals) | Prepare for Advanced Computer Science Courses. Learn how to program and think like a Computer Scientist
+-  
+
 ### English
 
 - [Real Python Tutorials](https://realpython.com)
