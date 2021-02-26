@@ -50,7 +50,9 @@
 
 - Coursera
    - [Специализация Основы компьютерных вычислений](https://www.coursera.org/specializations/computer-fundamentals) | Prepare for Advanced Computer Science Courses. Learn how to program and think like a Computer Scientist
--  
+
+
+
 
 ### English
 
@@ -65,6 +67,10 @@
       - > Посвящён тёмным материям программирования: **рефакторингу, паттернам проектирования, принципам SOLID** и другим важным темам из мира программирования.
    - [Самоучитель Python](https://pythonworld.ru/samouchitel-python)
    - [Руководство по языку программирования Python](https://metanit.com/python/tutorial/)
+
+## Git
+
+- [Git. Базовый курс](https://geekbrains.ru/courses/1117?courses=programming) - GeekBrains
 
 
 ## Usefull Articles to read later
