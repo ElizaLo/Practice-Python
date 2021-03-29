@@ -83,3 +83,6 @@
    
 - [Руководство по **магическим методам** в Питоне](https://habr.com/ru/post/186608/)
 - [Итерируемый объект, итератор и генератор](https://habr.com/ru/post/337314/)
+
+
+- [How to access the opt folder on your Mac and make it visible?](https://macpaw.com/how-to/access-opt-folder-on-mac)
