@@ -2,17 +2,6 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FElizaLo%2FPractice-Python&count_bg=%23056DE3&title_bg=%23B5B5BC&icon=python.svg&icon_color=%23E7E7E7&title=Repository+Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## Table of Contents
-
-- [Practice](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#practice)
-- [Projects](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#projects)
-   - [Small](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#small)
-- [Useful](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#useful)
-- [Online Resources](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#online-resources)
-   - [English](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#english)
-   - [Russian](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#russian)
-- [Usefull Articles to read later](https://github.com/ElizaLo/Practice-Python/blob/master/README.md#usefull-articles-to-read-later)
-
 ## Practice 
 
 - 🔹 **Coursera courses**
@@ -25,9 +14,9 @@
    - [Day 2: Operators](https://www.hackerrank.com/challenges/30-operators/problem)
    - [Day 3: Intro to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements/problem)
 
-## Projects
+# Projects
 
-### Small:
+## Small:
 - [Voice Assistant](https://github.com/ElizaLo/Practice-Python/tree/master/Voice%20Assistant)
    - [src](https://github.com/ElizaLo/Practice-Python/blob/master/Voice%20Assistant/src/main.py)
 - **Data Compression Methods:**
@@ -44,15 +33,12 @@
    - > The Python Package Index (PyPI) is a repository of software for the Python programming language.
 
 
-## Online Resources
+# Online Resources
 
 ## Cources
 
 - Coursera
    - [Специализация Основы компьютерных вычислений](https://www.coursera.org/specializations/computer-fundamentals) | Prepare for Advanced Computer Science Courses. Learn how to program and think like a Computer Scientist
-
-
-
 
 ### English
 
@@ -67,6 +53,14 @@
       - > Посвящён тёмным материям программирования: **рефакторингу, паттернам проектирования, принципам SOLID** и другим важным темам из мира программирования.
    - [Самоучитель Python](https://pythonworld.ru/samouchitel-python)
    - [Руководство по языку программирования Python](https://metanit.com/python/tutorial/)
+   - [Pythonist](https://pythonist.ru)
+   - [Pythonchik](https://pythonchik.ru)
+
+### :octocat: GitHub Repositories
+
+| Title | Description |
+| :---         |          :--- |
+|[Python Roadmap](https://github.com/GnuriaN/Python-Roadmap)|Дорожная карта по изучению Python|
 
 ## Git
 
