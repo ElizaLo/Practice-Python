@@ -27,11 +27,18 @@
 - **Hack Probability**
    - [Description](https://github.com/ElizaLo/Practice/blob/master/Hack%20Probability/Lab3.pdf)
   
-## Useful
-   
-- [PyPI](https://pypi.org)
-   - > The Python Package Index (PyPI) is a repository of software for the Python programming language.
+# Libraries
 
+| Title | Description, Information |
+| :---:         |          :--- |
+|[PyPI](https://pypi.org)|The Python Package Index (PyPI) is a repository of software for the Python programming language.|
+|[Placekey-py](https://pypi.org/project/placekey/)|A Python library for working with Placekeys. Documentation for this package can be found here, and documentation for the Placekey service API can be found here. The Plackey design specification is available here. The details in Placekey encoding is here. We welcome your feedback.|
+
+## Parallelize Python
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Dask](https://www.dask.org)|Parallelize any Python code with Dask Futures, letting you scale any function and for loop, and giving you control and power in any situation.|
 
 # Online Resources
 
