@@ -68,6 +68,7 @@
 | Title | Description |
 | :---         |          :--- |
 |[Python Roadmap](https://github.com/GnuriaN/Python-Roadmap)|Дорожная карта по изучению Python|
+|[learning](https://github.com/amitness/learning)|A running log of things I'm learning to build strong core software engineering skills while also expanding breadth of knowledge on [adjacent technologies](http://www.effectiveengineer.com/blog/master-adjacent-disciplines) a little bit [everyday](https://jamesclear.com/continuous-improvement).|
 
 ## Git
 
