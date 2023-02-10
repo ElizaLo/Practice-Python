@@ -2,7 +2,11 @@
 
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FElizaLo%2FPractice-Python&count_bg=%23056DE3&title_bg=%23B5B5BC&icon=python.svg&icon_color=%23E7E7E7&title=Repository+Views&edge_flat=false)](https://hits.seeyoufarm.com)
 
-## Practice 
+# :books: Books
+
+- [The Little Book of Python Anti-Patterns](https://github.com/quantifiedcode/python-anti-patterns), open-source book
+
+# Practice 
 
 - 🔹 **Coursera courses**
    - [Specialization: Python for Everybody](https://github.com/ElizaLo/Practice-Python/tree/master/Python%20for%20Everybody)
@@ -15,6 +19,10 @@
    - [Day 3: Intro to Conditional Statements](https://www.hackerrank.com/challenges/30-conditional-statements/problem)
 
 # Projects
+
+| Title | Description, Information |
+| :---:         |          :--- |
+|[Project Based Learning](https://github.com/practical-tutorials/project-based-learning/blob/master/README.md)|A list of programming tutorials in which aspiring software developers learn how to build an application from scratch. These tutorials are divided into different primary programming languages. Tutorials may involve multiple technologies and languages.|
 
 ## Small:
 - [Voice Assistant](https://github.com/ElizaLo/Practice-Python/tree/master/Voice%20Assistant)
