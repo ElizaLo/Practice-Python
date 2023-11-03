@@ -20,6 +20,55 @@ With **multiprocessing**, Python creates new processes. A process here can be th
 
 Because they are different processes, each of your trains of thought in a multiprocessing program can run on a different core. Running on a different core means that they actually can run at the same time, which is fabulous. There are some complications that arise from doing this, but Python does a pretty good job of smoothing them over most of the time.
 
+# ❓ When Is Concurrency Useful?
+
+Concurrency can make a big difference for two types of problems. These are generally called **CPU-bound** and **I/O-bound**.
+
+I/O-bound problems cause your program to slow down because it frequently must wait for [input/output (I/O)](https://realpython.com/python-input-output/) from some external resource. They arise frequently when your program is working with things that are much slower than your CPU.
+
+<img src="" width="700" height="394"/>
+
+In the diagram above, the blue boxes show time when your program is doing work, and the red boxes are time spent waiting for an I/O operation to complete. This diagram is not to scale because requests on the internet can take several orders of magnitude longer than CPU instructions, so your program can end up spending most of its time waiting.
+
+On the flip side, there are classes of programs that do significant computation without talking to the network or accessing a file. These are the CPU-bound programs, because the resource limiting the speed of your program is the CPU, not the network or the file system.
+
+Here’s a corresponding diagram for a CPU-bound program:
+
+<img src="" width="700" height="394"/>
+
+As you work through the examples in the following section, you’ll see that different forms of concurrency work better or worse with CPU-bound and I/O-bound programs. Adding concurrency to your program adds extra code and complications, so you’ll need to decide if the potential speed up is worth the extra effort.
+
+# 💠 Threads
+
+## ℹ️ Notes
+
+The other interesting change in our example is that each thread needs to create its own `requests.Session()` object. When you’re looking at the documentation for requests, it’s not necessarily easy to tell, but reading [this issue](https://github.com/requests/requests/issues/2766), it seems fairly clear that you need a separate Session for each thread.
+
+This is one of the interesting and difficult issues with threading. Because the operating system is in control of when your task gets interrupted and another task starts, any data that is shared between the threads needs to be protected, or thread-safe. Unfortunately requests.Session() is not thread-safe.
+
+There are several strategies for making data accesses thread-safe depending on what the data is and how you’re using it. One of them is to use thread-safe data structures like Queue from Python’s queue module.
+
+Well, as you can see from the example, it takes a little more code to make this happen, and you really have to give some thought to what data is shared between threads.
+
+---
+
+The correct number of threads is not a constant from one task to another. Some experimentation is required.
+
+## 📰 Articles
+
+- [`threading` Version](https://realpython.com/python-concurrency/#threading-version)
+
+# 💠 asyncio 
+
+## ℹ️ Notes
+
+An important point of `asyncio` is that the tasks never give up control without intentionally doing so. They never get interrupted in the middle of an operation. This allows us to share resources a bit more easily in `asyncio` than in threading. You don’t have to worry about making your code thread-safe.
+
+## 📰 Articles
+
+- [`asyncio` Version](https://realpython.com/python-concurrency/#asyncio-version)
+- [How does asyncio work?](https://stackoverflow.com/a/51116910/6843734)
+
 # 📰 Articles
 
 - [Speed Up Your Python Program With Concurrency](https://realpython.com/python-concurrency/)
