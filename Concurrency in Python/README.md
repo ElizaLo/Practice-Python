@@ -40,6 +40,12 @@ As you work through the examples in the following section, you’ll see that dif
 
 # 💠 Threads
 
+It’s tempting to think of threading as having two (or more) different processors running on your program, each one doing an independent task at the same time. That’s almost right. The threads may be running on different processors, but they will only be running one at a time.
+
+Getting multiple tasks running simultaneously requires a non-standard implementation of Python, writing some of your code in a different language, or using `multiprocessing` which comes with some extra overhead.
+
+Because of the way CPython implementation of Python works, threading may not speed up all tasks. This is due to interactions with the GIL that essentially limit one Python thread to run at a time.
+
 ## ℹ️ Notes
 
 The other interesting change in our example is that each thread needs to create its own `requests.Session()` object. When you’re looking at the documentation for requests, it’s not necessarily easy to tell, but reading [this issue](https://github.com/requests/requests/issues/2766), it seems fairly clear that you need a separate Session for each thread.
