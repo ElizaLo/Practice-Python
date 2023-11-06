@@ -103,3 +103,4 @@ An important point of `asyncio` is that the tasks never give up control without 
 - [Race condition](https://en.wikipedia.org/wiki/Race_condition)
 - [Preemption (computing)](https://en.wikipedia.org/wiki/Preemption_%28computing%29#Preemptive_multitasking)
 - [Cooperative multitasking](https://en.wikipedia.org/wiki/Cooperative_multitasking)
+- [Mutual exclusion](https://en.wikipedia.org/wiki/Mutual_exclusion)
