@@ -46,6 +46,14 @@ Getting multiple tasks running simultaneously requires a non-standard implementa
 
 Because of the way CPython implementation of Python works, threading may not speed up all tasks. This is due to interactions with the GIL that essentially limit one Python thread to run at a time.
 
+## Daemon Threads
+
+In computer science, a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) is a process that runs in the background.
+
+Python threading has a more specific meaning for daemon. A daemon thread will shut down immediately when the program exits. One way to think about these definitions is to consider the daemon thread a thread that runs in the background without worrying about shutting it down.
+
+If a program is running Threads that are not daemons, then the program will wait for those threads to complete before it terminates. Threads that are daemons, however, are just killed wherever they are when the program is exiting.
+
 ## ℹ️ Notes
 
 The other interesting change in our example is that each thread needs to create its own `requests.Session()` object. When you’re looking at the documentation for requests, it’s not necessarily easy to tell, but reading [this issue](https://github.com/requests/requests/issues/2766), it seems fairly clear that you need a separate Session for each thread.
@@ -62,7 +70,14 @@ The correct number of threads is not a constant from one task to another. Some e
 
 ## 📰 Articles
 
+- [An Intro to Threading in Python](https://realpython.com/intro-to-python-threading/)
+  - :octocat: [intro-to-threading](https://github.com/realpython/materials/tree/master/intro-to-threading)
 - [`threading` Version](https://realpython.com/python-concurrency/#threading-version)
+- [Daemon (computing)](https://en.wikipedia.org/wiki/Daemon_(computing)) on Wikipedia
+
+## ⚙️ Tools
+
+- [`threading` — Thread-based parallelism](https://docs.python.org/3/library/threading.html#module-threading)
 
 # 💠 asyncio 
 
@@ -78,3 +93,13 @@ An important point of `asyncio` is that the tasks never give up control without 
 # 📰 Articles
 
 - [Speed Up Your Python Program With Concurrency](https://realpython.com/python-concurrency/)
+- - [An Intro to Threading in Python](https://realpython.com/intro-to-python-threading/)
+ 
+# 🗞️ Other Related Topics and Articles
+
+## ◾ Wikipedia
+
+- [Daemon (computing)](https://en.wikipedia.org/wiki/Daemon_(computing))
+- [Race condition](https://en.wikipedia.org/wiki/Race_condition)
+- [Preemption (computing)](https://en.wikipedia.org/wiki/Preemption_%28computing%29#Preemptive_multitasking)
+- [Cooperative multitasking](https://en.wikipedia.org/wiki/Cooperative_multitasking)
