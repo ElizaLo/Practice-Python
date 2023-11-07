@@ -26,7 +26,7 @@ Concurrency can make a big difference for two types of problems. These are gener
 
 I/O-bound problems cause your program to slow down because it frequently must wait for [input/output (I/O)](https://realpython.com/python-input-output/) from some external resource. They arise frequently when your program is working with things that are much slower than your CPU.
 
-<img src="" width="700" height="394"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/Practice-Python/master/Concurrency%20in%20Python/img/IOBound.webp" width="695" height="195"/>
 
 In the diagram above, the blue boxes show time when your program is doing work, and the red boxes are time spent waiting for an I/O operation to complete. This diagram is not to scale because requests on the internet can take several orders of magnitude longer than CPU instructions, so your program can end up spending most of its time waiting.
 
@@ -34,7 +34,7 @@ On the flip side, there are classes of programs that do significant computation 
 
 Here’s a corresponding diagram for a CPU-bound program:
 
-<img src="" width="700" height="394"/>
+<img src="https://raw.githubusercontent.com/ElizaLo/Practice-Python/master/Concurrency%20in%20Python/img/CPUBound.webp" width="695" height="195"/>
 
 As you work through the examples in the following section, you’ll see that different forms of concurrency work better or worse with CPU-bound and I/O-bound programs. Adding concurrency to your program adds extra code and complications, so you’ll need to decide if the potential speed up is worth the extra effort.
 
@@ -45,6 +45,8 @@ It’s tempting to think of threading as having two (or more) different processo
 Getting multiple tasks running simultaneously requires a non-standard implementation of Python, writing some of your code in a different language, or using `multiprocessing` which comes with some extra overhead.
 
 Because of the way CPython implementation of Python works, threading may not speed up all tasks. This is due to interactions with the GIL that essentially limit one Python thread to run at a time.
+
+<img src="https://github.com/ElizaLo/Practice-Python/blob/master/Concurrency%20in%20Python/img/Threading.3eef48da829e.png" width="599" height="269"/>
 
 ## Daemon Threads
 
@@ -87,13 +89,42 @@ An important point of `asyncio` is that the tasks never give up control without 
 
 ## 📰 Articles
 
+- [Getting Started With Async Features in Python](https://realpython.com/python-async-features/)
 - [`asyncio` Version](https://realpython.com/python-concurrency/#asyncio-version)
 - [How does asyncio work?](https://stackoverflow.com/a/51116910/6843734)
+
+## ⚙️ Tools
+
+- [Coroutines and Tasks](https://docs.python.org/3.12/library/asyncio-task.html#asyncio.gather)
+
+# 💠 multiprocessing 
+
+## ⚙️ Tools
+
+- [multiprocessing](https://docs.python.org/3/library/multiprocessing.html) — Process-based parallelism
+- [Parallel Python](https://www.parallelpython.com) — is a python module which provides mechanism for parallel execution of python code on SMP (systems with multiple processors or cores) and clusters (computers connected via network).
 
 # 📰 Articles
 
 - [Speed Up Your Python Program With Concurrency](https://realpython.com/python-concurrency/)
-- - [An Intro to Threading in Python](https://realpython.com/intro-to-python-threading/)
+- [An Intro to Threading in Python](https://realpython.com/intro-to-python-threading/)
+- [Getting Started With Async Features in Python](https://realpython.com/python-async-features/)
+- [What Is the Python Global Interpreter Lock (GIL)?](https://realpython.com/python-gil/)
+  - [Bypassing the GIL for Parallel Processing in Python](https://realpython.com/python-parallel-processing/)
+  - [One GIL Per Subinterpreter](https://realpython.com/python312-new-features/#one-gil-per-subinterpreter)
+  - [Python 3.12 Preview: Subinterpreters](https://realpython.com/python312-subinterpreters/)
+- 
+
+---
+
+- [Multiprocessing vs Multithreading in Python – Explained With Cooking](https://www.monterail.com/blog/multiprocessing-multithreading-python#traditional-approach)
+
+## 🔹 Concurrent API requests
+
+- [Concurrent API requests with Python by example](https://kohera.be/concurrent-api-requests-with-python-by-example/)
+- [How to call multiple API requests concurrently in Python](https://medium.com/@ay.workable/how-to-call-multiple-api-requests-concurrently-in-python-4b94e00fc89b)
+
+
  
 # 🗞️ Other Related Topics and Articles
 
@@ -104,3 +135,4 @@ An important point of `asyncio` is that the tasks never give up control without 
 - [Preemption (computing)](https://en.wikipedia.org/wiki/Preemption_%28computing%29#Preemptive_multitasking)
 - [Cooperative multitasking](https://en.wikipedia.org/wiki/Cooperative_multitasking)
 - [Mutual exclusion](https://en.wikipedia.org/wiki/Mutual_exclusion)
+- [Coroutine](https://en.wikipedia.org/wiki/Coroutine#:~:text=Coroutines%20are%20computer%20program%20components,generalizing%20subroutines%20for%20cooperative%20multitasking.)
