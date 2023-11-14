@@ -48,6 +48,39 @@ Because of the way CPython implementation of Python works, threading may not spe
 
 <img src="https://github.com/ElizaLo/Practice-Python/blob/master/Concurrency%20in%20Python/img/Threading.3eef48da829e.png" width="599" height="269"/>
 
+## ❓ What is better to use: `executor.shutdown(wait=True)` and `queue` or  `as_completed` from `concurrent.futures`?
+
+Both `executor.shutdown(wait=True)` and `as_completed` from `concurrent.futures` can be used for waiting until all threads finish, and the choice between them depends on the specific requirements and structure of your program.
+
+1. **`executor.shutdown(wait=True)` and `queue`:**
+   - This approach is simpler and more direct. `executor.shutdown(wait=True)` ensures that the executor does not accept any more tasks and waits for all submitted tasks to be completed.
+   - You can use a `Queue` to safely collect results from threads.
+
+   ```python
+   with ThreadPoolExecutor(max_workers=num_threads) as executor:
+       for i, record in enumerate(data):
+           executor.submit(invoke_lambda, record)
+
+       # Wait until all threads finish
+       executor.shutdown(wait=True)
+   ```
+
+2. **`as_completed`:**
+   - `as_completed` returns an iterator that yields futures as they are completed. This allows you to process the results as soon as they are available.
+   - You can achieve a similar result to the `queue` approach by iterating over the futures returned by `as_completed`.
+
+   ```python
+   futures = [executor.submit(invoke_lambda, record) for record in data]
+
+   for future in concurrent.futures.as_completed(futures):
+       result = future.result()
+       # Process the result
+   ```
+
+   - 🗒️ **_Note:_** You'll need to ensure that you collect the results in a thread-safe manner if you are modifying shared data structures.
+
+In summary, both approaches can be effective, and the choice depends on the specific requirements and structure of your application. If simplicity and directness are important, the first approach with `executor.shutdown(wait=True)` and a `Queue` may be more straightforward. If you need more fine-grained control over completed results, `as_completed` might be a good fit.
+
 ## Daemon Threads
 
 In computer science, a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) is a process that runs in the background.
